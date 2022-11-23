@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--Icono de la página-->
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="img/favicon-16x16.png"
+        />
+        <!--Descripción de la página-->
+        <meta
+          name="description"
+          content="Curso de desarrollo web con HTML, CSS y JS, pagina informativa sobre lugar turísiticos"
+        />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=1.0"
+        />
+        <!-- BOOTSTRAP LINK-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <!-- ============== -->
+        <link rel="stylesheet" href="./css/vistaPrincipal.css">
+        <title>Proyecto 07 - Curso con Bootstrap</title>
+      </head>
+</head>
+<body class="">
+    <!-- Cabecera, enlaces y buttons-->
+    <header class="">
+        <section class="navbar navbar-expand-md navbar-dark bd-navbar header_bread">
+            <article class="container-xxl flex-wrap flex-md-wrap flex-sm-wrap">
+                <section class="header_left_bread breadcrumb col-md-auto justify-content-center">
+                    <svg class="bread_enlaces breadcrumb-item text-decoration-none"
+                    xmlns="http://www.w3.org/2000/svg" 
+                    fill="none" viewBox="0 0 24 24" 
+                    stroke-width="1.5" 
+                    stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" 
+                        d="M14.25 9.75L16.5 12l-2.25 2.25m-4.5 0L7.5 12l2.25-2.25M6 20.25h12A2.25 2.25 0 0020.25 18V6A2.25 2.25 0 0018 3.75H6A2.25 2.25 0 003.75 6v12A2.25 2.25 0 006 20.25z" />
+                      </svg>
+                      
+                    <a href="#" class="bread_enlaces breadcrumb-item text-decoration-none active">Principal</a>
+                    <a href="Informacion.html" class="bread_enlaces breadcrumb-item text-decoration-none">Informacion</a>
+                    <a href="Hoteles.html" class="bread_enlaces breadcrumb-item text-decoration-none">Hoteles</a>
+                    <a href="Reservacion.html" class="bread_enlaces breadcrumb-item text-decoration-none">Reserva</a>
+                    <a href="Transporte.html" class="bread_enlaces breadcrumb-item text-decoration-none">Transporte</a>
+                </section>
+                <section class= "btn-group justify-content-sm-center button">
+                    <a href="#" class="btn btn-outline-success me-2">Iniciar Sesion</a>
+                    <a href="#" class="btn btn-success">Registrar</a>
+                </section>
+            </article>
+        </section>
+    </header>
+    <!--Se realizará la vista del panel para poder realizar el carrusel-->
+    <nav class="">
+        <section class="">
+            <article class="col-12 border border-2 caja_carousel border-white">
+                <section class="carousel slide carousel-fade" id="mi-carousel" data-bs-ride="carousel">
+                    <article class="carousel-inner">
+                        <article class="carousel-item active">
+                            <img src="./img/carousel1.jpg" class="img_carousel" preserveAspectRatio="xMidYMid slice" alt="Carousel-1">
+                            <section class="carousel-caption caja_texto">
+                                <h5 class="d-none d-lg-block d-sm-block d-md-block">Descripcion de la imagen #1</h5>
+                                <p class="d-none d-none d-lg-block d-sm-block d-md-block">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <button type="button" class="btn btn-success d-none d-lg-block d-sm-block d-md-block">Más Información</button>
+                            </section>
+                        </article>
+                        <article class="carousel-item">
+                            <img src="./img/carousel2.jpg" alt="Carousel-2" class="img_carousel">
+                            <section class="carousel-caption caja_texto">
+                                <h5 class="d-none d-lg-block d-sm-block d-md-block">Descripcion de la imagen #1</h5>
+                                <p class="d-none d-none d-lg-block d-sm-block d-md-block">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <button type="button" class="btn btn-success d-none d-lg-block d-sm-block d-md-block">Más Información</button>
+                            </section>
+                        </article>
+                        <article class="carousel-item">
+                            <img src="./img/carousel3.jpg" alt="Carousel-3" class="img_carousel">
+                            <section class="carousel-caption caja_texto">
+                                <h5 class="d-none d-lg-block d-sm-block d-md-block">Descripcion de la imagen #1</h5>
+                                <p class="d-none d-none d-lg-block d-sm-block d-md-block">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <button type="button" class="btn btn-success d-none d-lg-block d-sm-block d-md-block">Más Información</button>
+                            </section>
+                        </article>
+                    </article>
+
+                    <!-- Botones de nex y prev -->
+                    <button 
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#mi-carousel"
+                    data-bs-slide="prev"
+                    >
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button 
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#mi-carousel"
+                    data-bs-slide="next"
+                    >
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </button>
+                </section>
+            </article>
+        </section>
+    </nav>
+    <main class="container">
+        <section class="row">
+            <article class="col-12 border-2 border border-white">
+                <section class="card mt-lg-2 border border-0">
+                    <h2>Lugares más Vistos</h2>
+                </section>
+            </article>
+            <article class="col-12 col-md-4 col-lg-4 col-sm-4">
+                <section class="card mb-2 mt-2">
+                    <img src="./img/bg3.jpg" width="100%" height="80%" class="img_card" alt="">
+                    <article class="card-body">
+                        <h1 class="card-title text-center card_bodyTitle">Titulo</h1>
+                        <p class="card-text text-center card_bodyParra">Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                        <a href="#" class="btn btn-outline-success d-flex justify-content-center">Boton</a>
+                    </article>
+                </section>
+            </article>
+            <article class="col-12 col-md-4 col-lg-4 col-sm-4">
+                <section class="card mb-2 mt-2">
+                    <img src="./img/bg2.jpg" alt="" class="img_card">
+                    <article class="card-body">
+                        <h1 class="card-title text-center card_bodyTitle">Titulo</h1>
+                        <p class="card-text text-center card_bodyParra">Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                        <a href="#" class="btn btn-outline-success d-flex justify-content-center">Boton</a>
+                    </article>
+                </section>
+            </article>
+            <article class="col-12 col-md-4 col-lg-4 col-sm-4">
+                <section class="card mb-2 mt-2">
+                    <img src="./img/bg.jpg" alt="" class="img_card">
+                    <article class="card-body">
+                        <h1 class="card-title text-center card_bodyTitle">Titulo</h1>
+                        <p class="card-text text-center card_bodyParra">Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                        <a href="#" class="btn btn-outline-success d-flex justify-content-center">Boton</a>
+                    </article>
+                </section>
+            </article>
+        </section>
+    </main>
+    <footer class="text-center text-white">
+        <!-- Grid container -->
+        <article class="container p-4">
+          <!-- Section: Images -->
+          <section class="">
+            <article class="row justify-content-evenly ">
+                <section class="col-lg-2 col-md-3 mb-4 mb-md-2 col-4">
+                    <article
+                    class="shadow rounded footer_fondo"
+                    >
+                    <img
+                        src="https://mdbcdn.b-cdn.net/img/new/fluid/city/113.webp"
+                        class="img_footer"
+                    />
+                    </article>
+                </section>
+                <section class="col-lg-2 col-md-3 mb-4 mb-md-0 col-4">
+                    <article
+                    class="shadow rounded footer_fondo"
+                    >
+                    <img
+                        src="https://mdbcdn.b-cdn.net/img/new/fluid/city/111.webp"
+                        class="img_footer"
+                    />
+                    </article>
+                </section>
+                <section class="col-lg-2 col-md-3 mb-4 mb-md-0 col-4">
+                    <article
+                    class="shadow rounded footer_fondo"
+                    >
+                    <img
+                        src="https://mdbcdn.b-cdn.net/img/new/fluid/city/112.webp"
+                        class="img_footer"
+                    />
+                    </article>
+                </section>
+                <section class="col-lg-2 col-md-3 mb-4 mb-md-0 col-4">
+                    <article
+                    class="shadow rounded footer_fondo"
+                    >
+                    <img
+                        src="https://mdbcdn.b-cdn.net/img/new/fluid/city/114.webp"
+                        class="img_footer"
+                    />
+                    </article>
+                </section>
+                <section class="col-lg-2 col-md-3 mb-4 mb-md-0 col-4">
+                    <article
+                    class="shadow rounded footer_fondo"
+                    >
+                    <img
+                        src="https://mdbcdn.b-cdn.net/img/new/fluid/city/115.webp"
+                        class="img_footer"
+                    />
+                    </article>
+                </section>
+                <section class="col-lg-2 col-md-3 mb-4 mb-md-0 col-4">
+                    <article
+                    class="shadow rounded footer_fondo"
+                    >
+                    <img
+                        src="https://mdbcdn.b-cdn.net/img/new/fluid/city/116.webp"
+                        class="img_footer"
+                    />
+                    </article>
+                </section>
+            </article>
+          </section>
+          <!-- Section: Images -->
+        </article>
+        <!-- Grid container -->
+      
+
+
+        <!-- Copyright -->
+        <article class="text-center p-3 footerCopy mt-3">
+            <section class="row d-flex justify-content-center">
+                <article class="col-12 col-sm-3">
+                    © 2020 Copyright:
+                    <a class="text-white" href="#">MDBootstrap.com</a>
+                </article>
+                <article class="col-12 col-sm-3">
+                    Redes sociales: 
+                    <a href="" class="">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+                          </svg>
+                    </a>
+                    <a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <rect x="3" y="5" width="18" height="14" rx="2" />
+                            <polyline points="3 7 12 13 21 7" />
+                          </svg>
+                    </a>
+                </article>
+            </section>
+        </article>
+        <!-- Copyright -->
+      </footer>
+</body>
+</html>
